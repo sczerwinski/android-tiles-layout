@@ -1,1 +1,1 @@
-include ':app', ':tiles-layout', ':tiles-layout-anko'
+include ':tiles-layout', ':tiles-layout-anko'
