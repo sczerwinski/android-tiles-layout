@@ -1,0 +1,53 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
+	}
+}
+
+repositories {
+	mavenLocal()
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+	compileSdkVersion 25
+	buildToolsVersion "25.0.3"
+
+	defaultConfig {
+		minSdkVersion 14
+		targetSdkVersion 25
+		versionCode androidVersionCode.toInteger()
+		versionName androidVersionName
+		testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+	}
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+		}
+	}
+	sourceSets {
+		main.java.srcDirs += 'src/main/kotlin'
+		test.java.srcDirs += 'src/test/kotlin'
+		androidTest.java.srcDirs += 'src/androidTest/kotlin'
+	}
+}
+
+dependencies {
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+
+	compile project(':tiles-layout')
+
+	compile "org.jetbrains.anko:anko:${ankoVersion}"
+
+	testCompile 'junit:junit:4.12'
+
+	androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+		exclude group: 'com.android.support', module: 'support-annotations'
+	})
+}

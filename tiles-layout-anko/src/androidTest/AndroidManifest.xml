@@ -1,0 +1,9 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="it.czerwinski.android.view.layout.tiles.anko">
+
+	<application>
+		<activity android:name=".AnkoTilesActivity" />
+	</application>
+
+</manifest>
