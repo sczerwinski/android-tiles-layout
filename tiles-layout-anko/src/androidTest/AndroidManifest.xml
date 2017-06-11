@@ -1,0 +1,11 @@
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="it.czerwinski.android.view.layout.tiles.anko">
+
+	<application>
+		<activity android:name=".AnkoTilesActivity" />
+		<activity android:name=".AnkoTilesPaddingActivity" />
+		<activity android:name=".AnkoTilesHVPaddingActivity" />
+	</application>
+
+</manifest>
