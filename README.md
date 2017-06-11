@@ -2,8 +2,6 @@
 
 # Static Tiles Layout For Android And Anko
 
-A set of Kotlin delegates whose values are stored in Android `SharedPreferences`.
-
 ## Gradle Build Configuration
 
 ```gradle
