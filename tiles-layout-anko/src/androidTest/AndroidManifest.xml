@@ -4,6 +4,8 @@
 
 	<application>
 		<activity android:name=".AnkoTilesActivity" />
+		<activity android:name=".AnkoTilesPaddingActivity" />
+		<activity android:name=".AnkoTilesHVPaddingActivity" />
 	</application>
 
 </manifest>
