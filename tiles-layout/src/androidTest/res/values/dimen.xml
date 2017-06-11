@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="test_tiles_padding_horizontal">16dp</dimen>
+	<dimen name="test_tiles_padding_vertical">8dp</dimen>
+	<dimen name="test_tiles_padding_horizontal_inner">24dp</dimen>
+	<dimen name="test_tiles_padding_vertical_inner">12dp</dimen>
+</resources>
