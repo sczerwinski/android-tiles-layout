@@ -18,6 +18,9 @@ apply plugin: 'kotlin-android'
 apply plugin: 'org.jetbrains.dokka-android'
 apply plugin: 'maven'
 
+group = groupId
+version = androidVersionName
+
 android {
 	compileSdkVersion 25
 	buildToolsVersion "25.0.3"

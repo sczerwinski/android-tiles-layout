@@ -1,6 +1,9 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
 
+group = groupId
+version = androidVersionName
+
 android {
 	compileSdkVersion 25
 	buildToolsVersion "25.0.3"
