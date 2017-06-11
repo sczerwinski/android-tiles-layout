@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<it.czerwinski.android.view.layout.tiles.TilesLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/tiles_layout"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="@dimen/test_tiles_padding_horizontal"
+	android:paddingRight="@dimen/test_tiles_padding_horizontal"
+	android:paddingTop="@dimen/test_tiles_padding_vertical"
+	android:paddingBottom="@dimen/test_tiles_padding_vertical"
+	app:tilesLayout_colsCount="2"
+	app:tilesLayout_rowsCount="3"
+	app:tilesLayout_innerHorizontalPadding="@dimen/test_tiles_padding_horizontal_inner"
+	app:tilesLayout_innerVerticalPadding="@dimen/test_tiles_padding_vertical_inner">
+
+	<Button
+		android:text="Button 1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<Button
+		android:text="Button 2"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<Button
+		android:text="Button 3"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<Button
+		android:text="Button 4"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<Button
+		android:text="Button 5"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<Button
+		android:text="Button 6"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+</it.czerwinski.android.view.layout.tiles.TilesLayout>

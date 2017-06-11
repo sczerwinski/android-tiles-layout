@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="TilesLayout">
+		<attr name="tilesLayout_rowsCount" format="integer" />
+		<attr name="tilesLayout_colsCount" format="integer" />
+		<attr name="tilesLayout_innerHorizontalPadding" format="dimension" />
+		<attr name="tilesLayout_innerVerticalPadding" format="dimension" />
+	</declare-styleable>
+</resources>
