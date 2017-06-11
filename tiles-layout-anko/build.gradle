@@ -81,7 +81,7 @@ artifacts {
 uploadArchives {
 	repositories.mavenDeployer {
 		pom.groupId = "${groupId}"
-		pom.artifactId = "${artifactId}"
+		pom.artifactId = "${artifactId}-anko"
 		pom.version = "${androidVersionName}"
 
 		repository(url: "file://${buildDir}/release/${androidVersionName}")
