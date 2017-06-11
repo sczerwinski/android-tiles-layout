@@ -1,5 +1,8 @@
 [![Download](https://api.bintray.com/packages/sczerwinski/android/tiles-layout/images/download.svg)](https://bintray.com/sczerwinski/android/tiles-layout/_latestVersion)
 
+Anko:
+[![Download](https://api.bintray.com/packages/sczerwinski/android/tiles-layout-anko/images/download.svg)](https://bintray.com/sczerwinski/android/tiles-layout-anko/_latestVersion)
+
 # Static Tiles Layout For Android And Anko
 
 ## Gradle Build Configuration
