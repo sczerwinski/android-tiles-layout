@@ -1,9 +1,11 @@
 buildscript {
 	repositories {
+		jcenter()
 		mavenCentral()
 	}
 	dependencies {
 		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
+		classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:${dokkaVersion}"
 	}
 }
 
@@ -13,6 +15,8 @@ repositories {
 
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
+apply plugin: 'org.jetbrains.dokka-android'
+apply plugin: 'maven'
 
 android {
 	compileSdkVersion 25
@@ -50,4 +54,36 @@ dependencies {
 	androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
 		exclude group: 'com.android.support', module: 'support-annotations'
 	})
+}
+
+dokka {
+	moduleName = 'Static tiles layout for Android'
+	outputFormat = 'javadoc'
+	outputDirectory = "$buildDir/dokka"
+	sourceDirs = android.sourceSets.main.java.srcDirs
+}
+
+task dokkaJar(type: Jar, dependsOn: project.dokka) {
+	classifier = 'javadoc'
+	from dokka
+}
+
+task sourcesJar(type: Jar) {
+	classifier = 'sources'
+	from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+	archives dokkaJar
+	archives sourcesJar
+}
+
+uploadArchives {
+	repositories.mavenDeployer {
+		pom.groupId = "${groupId}"
+		pom.artifactId = "${artifactId}"
+		pom.version = "${androidVersionName}"
+
+		repository(url: "file://${buildDir}/release/${androidVersionName}")
+	}
 }

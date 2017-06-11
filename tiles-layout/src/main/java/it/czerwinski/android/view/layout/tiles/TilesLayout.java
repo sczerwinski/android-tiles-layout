@@ -8,6 +8,14 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
+/**
+ * A layout that arranges its children into tiles of equal size.
+ *
+ * @attr ref R.styleable#TilesLayout_tilesLayout_colsCount
+ * @attr ref R.styleable#TilesLayout_tilesLayout_rowsCount
+ * @attr ref R.styleable#TilesLayout_tilesLayout_innerHorizontalPadding
+ * @attr ref R.styleable#TilesLayout_tilesLayout_innerVerticalPadding
+ */
 public class TilesLayout extends ViewGroup {
 
 	private int colsCount = 1;
@@ -48,34 +56,90 @@ public class TilesLayout extends ViewGroup {
 		attributes.recycle();
 	}
 
+	/**
+	 * Gets the number of columns in the tiles arrangement.
+	 *
+	 * @return Number of columns.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_colsCount
+	 */
 	public int getColsCount() {
 		return colsCount;
 	}
 
+	/**
+	 * Sets the number of columns in the tiles arrangement.
+	 *
+	 * @param colsCount Number of columns.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_colsCount
+	 */
 	public void setColsCount(int colsCount) {
 		this.colsCount = colsCount;
 	}
 
+	/**
+	 * Gets the number of rows in the tiles arrangement.
+	 *
+	 * @return Number of rows.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_rowsCount
+	 */
 	public int getRowsCount() {
 		return rowsCount;
 	}
 
+	/**
+	 * Sets the number of rows in the tiles arrangement.
+	 *
+	 * @param rowsCount Number of rows.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_rowsCount
+	 */
 	public void setRowsCount(int rowsCount) {
 		this.rowsCount = rowsCount;
 	}
 
+	/**
+	 * Gets the inner horizontal padding between the tiles.
+	 *
+	 * @return Inner horizontal padding.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_innerHorizontalPadding
+	 */
 	public int getInnerHorizontalPadding() {
 		return innerHorizontalPadding;
 	}
 
+	/**
+	 * Sets the inner horizontal padding between the tiles.
+	 *
+	 * @param innerHorizontalPadding Inner horizontal padding.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_innerHorizontalPadding
+	 */
 	public void setInnerHorizontalPadding(int innerHorizontalPadding) {
 		this.innerHorizontalPadding = innerHorizontalPadding;
 	}
 
+	/**
+	 * Gets the inner vertical padding between the tiles.
+	 *
+	 * @return Inner vertical padding.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_innerVerticalPadding
+	 */
 	public int getInnerVerticalPadding() {
 		return innerVerticalPadding;
 	}
 
+	/**
+	 * Sets the inner vertical padding between the tiles.
+	 *
+	 * @param innerVerticalPadding Inner vertical padding.
+	 *
+	 * @attr ref R.styleable#TilesLayout_tilesLayout_innerVerticalPadding
+	 */
 	public void setInnerVerticalPadding(int innerVerticalPadding) {
 		this.innerVerticalPadding = innerVerticalPadding;
 	}
