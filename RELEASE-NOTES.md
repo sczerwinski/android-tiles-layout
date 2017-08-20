@@ -1,4 +1,4 @@
-# Statid Tiles Layout For Android And Anko – Release Notes
+# Static Tiles Layout For Android And Anko – Release Notes
 
 ## Version 0.1
 
